@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+}
+.bg-blue{
+    background-color: #189FDA;
+}
+.bg-grey{
+    background-color: lightgrey;
+}
+a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+
+}
+.border-radius-10{
+    border-radius: 10px;
+}
+.bullet{
+    border: 5px grey solid;
+    border-radius: 50%;
+    width: 50px;
+    text-align: center;
+}
+.circle-white{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 15px;
+}
+.container{
+    padding: 0 10%;
+}
+.container .bg-grey .container input{
+    /* height: 40px;
+    width: 93%; */
+    border-radius: 10px;
+    border: none;
+}
+.container .bg-grey .container .d-flex input{
+    width: 226%;
+}
+.d-flex{
+    display: flex;
+}
+.float-left{
+    float: left;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.flex-end button{
+    width: 30%;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: #189FDA;
+    border: none;
+    font-size: 1.7rem;
+    color: white;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.font-normal{
+    font-weight: normal;
+}
+.grey-line1{
+    position: absolute;
+    background-color: grey;
+    width: 29.1%;
+    height: 5px;
+    top: 58px;
+    left: 18.8%;
+}
+.grey-line2{
+    position: absolute;
+    background-color: grey;
+    width: 29.2%;
+    height: 5px;
+    top: 58px;
+    left: 52.1%;
+}
+h1{
+    font-size: 4rem
+}
+h2{
+    font-size: 2.5rem;
+}
+header input{
+    height: 30px;
+    width: 15%;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px white solid;
+}
+.height-40{
+    height: 40px;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-space-around{
+    justify-content: space-around;
+}
+label{
+    font-size: 1.5rem;
+}
+.line{
+    background-color: white;
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    margin: 0 30px;
+}
+.margin-right-35per{
+    margin-right: 30%;
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+}
+.width-50per{
+    width: 50% !important;
+}
+.width-60per{
+    width: 60%;
+}
+.width-100per{
+    width: 100%;
+}
+.text-blue{
+    color: #189FDA;
+}
+.text-white{
+    color: white;
+}
+.text-center{
+    text-align: center;
+}
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
