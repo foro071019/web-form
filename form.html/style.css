@@ -1,3 +1,12 @@
+a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+
+}
+.align-center{
+    align-items: center;
+}
 body{
     margin: 0;
 }
@@ -5,13 +14,10 @@ body{
     background-color: #189FDA;
 }
 .bg-grey{
-    background-color: lightgrey;
+    background-color:grey;
 }
-a{
-    font-size: 2rem;
-    text-decoration: none;
-    color: white;
-
+.bg-lightgrey{
+    background-color: lightgrey;
 }
 .border-radius-10{
     border-radius: 10px;
@@ -32,27 +38,30 @@ a{
 .container{
     padding: 0 10%;
 }
-.container .bg-grey .container input{
+.container .bg-lightgrey .container input{
     /* height: 40px;
     width: 93%; */
     border-radius: 10px;
     border: none;
 }
 .container .bg-grey .container .d-flex input{
-    width: 226%;
+    width: 100%;
 }
 .d-flex{
     display: flex;
+}
+.display-none{
+    display: none;
 }
 .float-left{
     float: left;
 }
 .flex-end{
-    justify-content: flex-end;
+    justify-content: flex-end !important;
 }
-.flex-end button{
+button{
     width: 30%;
-    height: 5vh;
+    height: 60px;
     border-radius: 10px;
     background-color: #189FDA;
     border: none;
@@ -88,13 +97,24 @@ h2{
 }
 header input{
     height: 30px;
-    width: 15%;
+    width: 100%;
     background-color: transparent;
     border-radius: 10px;
     border: 1px white solid;
+    margin-top: 20px;
 }
 .height-40{
     height: 40px;
+}
+header .position-relative img{
+    position: absolute;
+    top: 27px;
+    height: 20px;
+    margin-left: 85%;
+}
+.incognito{
+    background-color: black;
+    transition: 5s;
 }
 .justify-content-center{
     justify-content: center;
@@ -112,8 +132,8 @@ label{
     height: 20px;
     margin: 0 30px;
 }
-.margin-right-35per{
-    margin-right: 30%;
+.margin-right-30{
+    margin-right: 30px;
 }
 .row{
     display:flex;
@@ -137,9 +157,34 @@ label{
 .text-center{
     text-align: center;
 }
+.transition{
+    background-color: #189FDA;
+    transition: .2s;
+    color: white;
+}
 .position-relative{
     position: relative;
 }
 .position-absolute{
     position: absolute;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        background-color: black;
+    }
+    .grey-line1{
+        width: 25.8% !important;
+        left: 20.5% !important;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .grey-line1{
+        width: 25.9%;
+        left: 20.3%;
+    }
+    .grey-line2{
+        width: 26.1%;
+        left: 53.5%;
+    }
 }

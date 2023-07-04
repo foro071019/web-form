@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body id="incognito">
         <header class="bg-blue" style="padding: 100px 0;">
             <div class="container">
                 <div class="row">
@@ -11,7 +11,7 @@
                         <img  class="width-60per" src="vivamus-logo.png" alt="icon">
                     </a>
 
-                    <div class="col">
+                    <div style="margin-top: 20px;">
                         <nav>
                             <a href="#">Bibendum</a>
                             <span class="line"></span>
@@ -23,52 +23,59 @@
                         </nav>
                     </div>
 
-                    <input type="text">
+                    <div class="position-relative">
+                        <input type="text">
+                        <img src="magnifying-glass-icon.png">
+                    </div>
                 </div>
             </div>
         </header>
 
         <div class="d-flex justify-content-center">
             <div class="container text-blue">
-                <h1 class="text-center">In euismod sapien eu maximus tempus</h1>
-                <h2 class="font-normal">Vestibulum bibendum posuere dui, in pharetra est hendrerit ac. Integer posuere metus lacus</h2>
+                <div class="text-center">
+                    <h1>In euismod sapien eu maximus tempus</h1>
+                    <h2 class="font-normal">Vestibulum bibendum posuere dui, in pharetra est hendrerit ac. Integer posuere metus lacus</h2>
+                </div>
 
                 <br>
                 <hr>
                 <br>
 
                 <div class="d-flex justify-content-space-around position-relative">
-                    <h2 class="font-normal bullet">
+                    <h2 class="font-normal bullet transition" id="bullet1">
                         1
                         <span class="grey-line1"></span>
                     </h2>
                     
-                    <h2 class="font-normal bullet">
+                    <h2 class="font-normal bullet" id="bullet2">
                         2
                         <span class="grey-line2"></span>
                     </h2>
-                    <h2 class="font-normal bullet">
+                    <h2 class="font-normal bullet" id="bullet3">
                         3
                     </h2>
                 </div>
                 
                 <div class="container">
-                    <div class="bg-grey border-radius-10" style="padding: 50px 80px; overflow: hidden;">
-                        <div>
+                    <form>
+                    <div class="bg-lightgrey border-radius-10" style="padding: 50px 80px; overflow: hidden;">
+                    
+                        <div id="progress1">
                             <h2 class="font-normal">About you</h2>
 
                             <div class="container">
                                 <div class="d-flex">
-                                    <div class="margin-right-35per">
+                                    <div class="margin-right-30 width-50per">
                                         <label for="fname">First name*</label>
                                         <br>
-                                        <input class="height-40 width-100per" type="text" required>
+                                        <input class="height-40 width-100per" type="text" id="fname" required>
                                     </div>
                                     
-                                    <div>
+                                    <div class="width-50per">
                                         <label for="lname">Last name*</label>
                                         <br>
-                                        <input class="height-40 width-100per" type="text" required>
+                                        <input class="height-40 width-100per" type="text" id="lname" required>
                                     </div>
                                 </div>
 
@@ -76,68 +83,91 @@
 
                                 <label for="email">Email Address*</label>
                                 <br>
-                                <input class="height-40 width-100per" type="email" name="" id="" required>
+                                <input class="height-40 width-100per" type="email" id="email" required>
 
                                 <br><br><br>
 
                                 <label for="phone">Mobile number*</label>
                                 <br>
-                                <input class="height-40 width-100per" type="number" name="" id="" required>
+                                <input class="height-40 width-100per" type="number" id="phone" required>
+
+                                <br><br><br>
                             </div>
                         </div>
 
-                        <div>
+                        <div class="display-none" id="progress2">
                             <h2 class="font-normal">Your Donation</h2>
 
                             <div class="container">
                                 <label for="donation">Donation Amount*</label>
                                 <br>
-                                <input class="width-50per height-40" type="number">
+                                <input class="width-50per height-40" type="number" id="amount" required>
 
                                 <br><br>
 
                                 <label for="cardHolderName">Card Holder Name*</label>
                                 <br>
-                                <input class="height-40 width-100per" type="text" name="" id="" required>
+                                <input class="height-40 width-100per" type="text" id="cardHolderName" required>
 
                                 <br><br>
 
                                 <label for="creditNo">Credit Card No.*</label>
                                 <br>
-                                <input class="height-40 width-100per" type="number" name="" id="" required>
+                                <input class="height-40 width-100per" type="number" id="creditNo" required>
 
                                 <br><br>
 
                                 <label for="securityCode">Card Security Code*</label>
                                 <br>
-                                <input class="width-50per height-40" type="securityCode" name="" id="" required>
+                                <input class="width-50per height-40" type="number" id="securityCode" required>
 
                                 <br><br>
 
                                 <label for="expDate">Expiry Date*</label>
                                 <br>
-                                <input class="width-50per height-40" type="expDate" name="" id="" required>
+                                <input class="width-50per height-40" type="date" id="expDate" required>
                             </div>
                         </div>
 
-                        <div>
+                        <div class="display-none" id="progress3">
                             <h2 class="font-normal">Comment Field</h2>
 
                             <div class="container">
                                 <label for="donation">Your Message</label>
                                 <br>
-                                <input class="width-100per" style="height: 20vh;" type="number">
+                                <input class="width-100per" style="height: 200px;" type="text">
 
-                                <br>
+                                <br><br>
 
-                                <input type="checkbox" style="height: 10px; width: 10px;">
+                                <div class="d-flex align-center">
+                                    <input type="checkbox" onclick="incognito()" style="height: 20px; width: 20px;">
+                                    <span class="text-blue">Keep me anonymous</span>    
+                                </div>
                             </div>
                         </div>
+                        
+                        <div class="display-none text-center" id="progress4">
+                            <h1 class="font-normal">
+                                <span style="font-size: 8rem;">Thank You</span>
+                                <br>
+                                <hr>
+                                For Your
+                                <br>
+                                <hr>
+                                <strong style="font-size: 6rem;">Donation</strong>
+                            </h1>
+                        </div>
+                    </div>
+    
+                    <div class="row flex-end" id="buttons">
+                        <button class="display-none" onclick="previous()" id="prevButton">Back</button>
+                        <button onclick="next()" id="nextButton">Next</button>
                     </div>
 
-                    <div class="d-flex flex-end">
-                        <button>Next</button>
+                    <div class="text-center">
+                        <button class="display-none" id="backButton" onclick="refreshPage()">Back</button>
                     </div>
+                    </form> 
                 </div>
             </div>
         </div>
@@ -171,5 +201,7 @@
                 </p>
             </div>
         </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
